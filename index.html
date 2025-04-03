@@ -10,12 +10,20 @@
 <body>
     <div class="calendar">
         <h1>Book Advent Calendar</h1>
-        <div class="grid">
-            <!-- Dynamically Created Days -->
-            <div class="day" id="day1" onclick="showBook('book1')">1</div>
-            <div class="day" id="day2" onclick="showBook('book2')">2</div>
-            <!-- Continue adding days here -->
+        <div class="month-grid">
+            <!-- Blocks for each month -->
+            <div class="month-block" id="month1" onclick="showBook('book1')">
+                <div class="month-title">January</div>
+            </div>
+            <div class="month-block" id="month2" onclick="showBook('book2')">
+                <div class="month-title">February</div>
+            </div>
+            <div class="month-block" id="month3" onclick="showBook('book3')">
+                <div class="month-title">March</div>
+            </div>
+            <!-- Add more months here -->
         </div>
+
         <div id="bookInfo" class="book-info"></div>
     </div>
 
