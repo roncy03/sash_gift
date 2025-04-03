@@ -1,8 +1,7 @@
 /* Body and Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: url('https://images.unsplash.com/photo-1490195261951-2e210b25c0c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8Ym9va3xlbnwwfHx8fDE2NTY0NTgwMTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
-    background-size: cover;
+    background: #f5f5f5; /* Light gray background */
     color: white;
     text-align: center;
     margin: 0;
@@ -37,7 +36,7 @@ h1 {
 
 /* Month Blocks */
 .month-block {
-    background: rgba(0, 0, 0, 0.7);
+    background: #4CAF50; /* Green color for blocks */
     color: white;
     padding: 60px 40px;
     border-radius: 15px;
@@ -48,12 +47,53 @@ h1 {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Adding Background Images to Each Block */
-.month-block:nth-child(odd) {
-    background: url('https://images.unsplash.com/photo-1522202201419-1775031b8007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8Ym9va3xlbnwwfHx8fDE2NTY0NTgwMTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center / cover;
+/* Month Block Colors (using random colors for each month) */
+#month1 {
+    background-color: #FF5733; /* Red */
 }
-.month-block:nth-child(even) {
-    background: url('https://images.unsplash.com/photo-1506748686217-10568ed10572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8Ym9va3xlbnwwfHx8fDE2NTY0NTgwMTg&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center / cover;
+
+#month2 {
+    background-color: #3498db; /* Blue */
+}
+
+#month3 {
+    background-color: #9b59b6; /* Purple */
+}
+
+#month4 {
+    background-color: #f1c40f; /* Yellow */
+}
+
+#month5 {
+    background-color: #2ecc71; /* Green */
+}
+
+#month6 {
+    background-color: #e74c3c; /* Dark Red */
+}
+
+#month7 {
+    background-color: #1abc9c; /* Teal */
+}
+
+#month8 {
+    background-color: #f39c12; /* Orange */
+}
+
+#month9 {
+    background-color: #8e44ad; /* Violet */
+}
+
+#month10 {
+    background-color: #34495e; /* Dark Blue */
+}
+
+#month11 {
+    background-color: #e67e22; /* Deep Orange */
+}
+
+#month12 {
+    background-color: #16a085; /* Dark Green */
 }
 
 /* Month Title Style */
