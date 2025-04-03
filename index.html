@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advent Calendar - Books</title>
+    <title>Bookish Advent Calendar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calendar">
-        <h1>Book Advent Calendar</h1>
-        <div class="grid">
-            <!-- Each box corresponds to a day -->
-            <div class="day" id="day1" onclick="showBook('book1')">1</div>
-            <div class="day" id="day2" onclick="showBook('book2')">2</div>
-            <!-- Continue for all 24 days -->
-        </div>
-        <div id="bookInfo" class="book-info"></div>
-    </div>
 
-    <script src="script.js"></script>
+<h1>Bookish Advent Calendar</h1>
+<p class="intro">Every day is a new chapter... literally! Click the dates to discover a book you’ll love!</p>
+
+<div class="calendar">
+    <div class="month-box" onclick="revealBook(1)">
+        <h3>December 1</h3>
+        <div id="book-1" class="book-info" style="background-color: #ffcc00;">
+            <p>Book Title 1</p>
+            <p>A fun, quirky read that you’ll finish in one sitting.</p>
+        </div>
+    </div>
+    <!-- Repeat for all other months, changing the background color as needed -->
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
