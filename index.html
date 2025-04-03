@@ -3,104 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Advent Calendar</title>
+    <title>Advent Calendar - Books</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-
     <div class="calendar">
-        <h1>My Book Advent Calendar</h1>
-
-        <div class="month-grid">
-            <!-- Month Blocks with Book Information -->
-            <div class="month-block" id="month1">
-                <div class="month-title">January</div>
-                <div class="book-info" id="book1">
-                    <h2>The Great Gatsby</h2>
-                    <p>A classic tale of the American Dream and the Roaring Twenties.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month2">
-                <div class="month-title">February</div>
-                <div class="book-info" id="book2">
-                    <h2>Pride and Prejudice</h2>
-                    <p>A romantic novel by Jane Austen.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month3">
-                <div class="month-title">March</div>
-                <div class="book-info" id="book3">
-                    <h2>1984</h2>
-                    <p>A dystopian novel by George Orwell.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month4">
-                <div class="month-title">April</div>
-                <div class="book-info" id="book4">
-                    <h2>To Kill a Mockingbird</h2>
-                    <p>A novel about racism and injustice in the American South.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month5">
-                <div class="month-title">May</div>
-                <div class="book-info" id="book5">
-                    <h2>The Catcher in the Rye</h2>
-                    <p>A story of adolescent rebellion and existential angst.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month6">
-                <div class="month-title">June</div>
-                <div class="book-info" id="book6">
-                    <h2>The Hobbit</h2>
-                    <p>An adventure tale set in the mythical land of Middle-earth.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month7">
-                <div class="month-title">July</div>
-                <div class="book-info" id="book7">
-                    <h2>Moby Dick</h2>
-                    <p>A narrative of obsession and revenge.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month8">
-                <div class="month-title">August</div>
-                <div class="book-info" id="book8">
-                    <h2>War and Peace</h2>
-                    <p>A historical epic set during the Napoleonic Wars.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month9">
-                <div class="month-title">September</div>
-                <div class="book-info" id="book9">
-                    <h2>Jane Eyre</h2>
-                    <p>A gothic novel about a young woman's search for independence.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month10">
-                <div class="month-title">October</div>
-                <div class="book-info" id="book10">
-                    <h2>The Picture of Dorian Gray</h2>
-                    <p>A novel about vanity, morality, and consequences.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month11">
-                <div class="month-title">November</div>
-                <div class="book-info" id="book11">
-                    <h2>The Lord of the Rings</h2>
-                    <p>An epic high-fantasy adventure.</p>
-                </div>
-            </div>
-            <div class="month-block" id="month12">
-                <div class="month-title">December</div>
-                <div class="book-info" id="book12">
-                    <h2>Harry Potter and the Sorcerer's Stone</h2>
-                    <p>A young boy discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry.</p>
-                </div>
-            </div>
+        <h1>Book Advent Calendar</h1>
+        <div class="grid">
+            <!-- Each box corresponds to a day -->
+            <div class="day" id="day1" onclick="showBook('book1')">1</div>
+            <div class="day" id="day2" onclick="showBook('book2')">2</div>
+            <!-- Continue for all 24 days -->
         </div>
+        <div id="bookInfo" class="book-info"></div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
