@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Advent Calendar</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -14,40 +15,40 @@
 
         <div class="month-grid">
             <!-- Month Blocks -->
-            <div class="month-block" id="month1">
+            <div class="month-block" id="month1" onclick="showBook('January')">
                 <div class="month-title">January</div>
             </div>
-            <div class="month-block" id="month2">
+            <div class="month-block" id="month2" onclick="showBook('February')">
                 <div class="month-title">February</div>
             </div>
-            <div class="month-block" id="month3">
+            <div class="month-block" id="month3" onclick="showBook('March')">
                 <div class="month-title">March</div>
             </div>
-            <div class="month-block" id="month4">
+            <div class="month-block" id="month4" onclick="showBook('April')">
                 <div class="month-title">April</div>
             </div>
-            <div class="month-block" id="month5">
+            <div class="month-block" id="month5" onclick="showBook('May')">
                 <div class="month-title">May</div>
             </div>
-            <div class="month-block" id="month6">
+            <div class="month-block" id="month6" onclick="showBook('June')">
                 <div class="month-title">June</div>
             </div>
-            <div class="month-block" id="month7">
+            <div class="month-block" id="month7" onclick="showBook('July')">
                 <div class="month-title">July</div>
             </div>
-            <div class="month-block" id="month8">
+            <div class="month-block" id="month8" onclick="showBook('August')">
                 <div class="month-title">August</div>
             </div>
-            <div class="month-block" id="month9">
+            <div class="month-block" id="month9" onclick="showBook('September')">
                 <div class="month-title">September</div>
             </div>
-            <div class="month-block" id="month10">
+            <div class="month-block" id="month10" onclick="showBook('October')">
                 <div class="month-title">October</div>
             </div>
-            <div class="month-block" id="month11">
+            <div class="month-block" id="month11" onclick="showBook('November')">
                 <div class="month-title">November</div>
             </div>
-            <div class="month-block" id="month12">
+            <div class="month-block" id="month12" onclick="showBook('December')">
                 <div class="month-title">December</div>
             </div>
         </div>
@@ -55,8 +56,8 @@
 
     <!-- Book Info Section -->
     <div class="book-info">
-        <h2>How It Works</h2>
-        <p>This advent calendar is all about books. Each day, you'll find a new book waiting for you to read. Click on any month to reveal the book suggestion for that month!</p>
+        <h2 id="bookTitle">How It Works</h2>
+        <p id="bookDescription">Click on any month to reveal a book suggestion!</p>
     </div>
 
 </body>
