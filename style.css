@@ -1,62 +1,86 @@
+/* General body styles */
 body {
-    font-family: 'Lora', serif;
-    background-color: #f7e1d7;
+    font-family: 'Roboto Slab', serif;
+    background-color: #f2f5f5; /* Soft light background */
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-h1 {
+.main-title {
     text-align: center;
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #4f4f4f;
+    margin-top: 30px;
 }
 
 .intro {
     text-align: center;
     font-size: 1.2em;
+    font-family: 'Courgette', cursive;
+    color: #666;
+    margin-bottom: 30px;
 }
 
+/* Calendar container to hold all the months */
 .calendar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 30px;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
 }
 
+/* Month box styles */
 .month-box {
-    background-color: #f0f0f0;
+    background-color: #fff; /* White background for each month box */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    border: 2px solid #ddd; /* Add a border around the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Playfair Display', serif; /* Italic font for month names */
 }
 
 .month-box:hover {
-    background-color: #f7c5d3;
+    background-color: #f2d4b3; /* Soft orange for hover effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
 }
 
+/* Month name styles */
+h3 {
+    font-size: 1.8em;
+    color: #4a4a4a;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* Book info container */
 .book-info {
-    display: none; /* Hide by default */
+    display: none;
     margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #fff; /* Ensures the text is visible on the colored background */
+    color: #fff;
 }
 
+/* Book title and description */
 .book-title {
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .book-description {
     font-size: 1.1em;
+    font-family: 'Roboto Slab', serif;
+    color: #f1f1f1;
 }
 
-/* To neatly place the months in a block */
-h3 {
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 10px;
+/* Hover effect for book-info box */
+.book-info:hover {
+    background-color: #ff7043; /* Light orange background when hovered */
 }
