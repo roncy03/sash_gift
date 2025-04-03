@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('your-beautiful-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.calendar {
+    margin-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.day {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.day:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.book-info {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
