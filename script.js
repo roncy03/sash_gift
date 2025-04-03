@@ -12,6 +12,10 @@ function showBook(bookId) {
             title: '1984',
             description: 'A dystopian novel by George Orwell, exploring totalitarianism and surveillance.'
         },
+        book4: { 
+            title: 'Pride and Prejudice',
+            description: 'A classic novel by Jane Austen, delving into love, reputation, and class.'
+        },
         // Add more books here
     };
 
