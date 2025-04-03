@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Advent Calendar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advent Calendar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="calendar">
-        <h1>Book Advent Calendar</h1>
+        <h1>My Book Advent Calendar</h1>
+
         <div class="month-grid">
-            <!-- Blocks for each month -->
-            <div class="month-block" id="month1" onclick="showBook('book1')">
+            <!-- Month Blocks -->
+            <div class="month-block" id="month1">
                 <div class="month-title">January</div>
             </div>
-            <div class="month-block" id="month2" onclick="showBook('book2')">
+            <div class="month-block" id="month2">
                 <div class="month-title">February</div>
             </div>
-            <div class="month-block" id="month3" onclick="showBook('book3')">
+            <div class="month-block" id="month3">
                 <div class="month-title">March</div>
             </div>
-            <div class="month-block" id="month4" onclick="showBook('book4')">
+            <div class="month-block" id="month4">
                 <div class="month-title">April</div>
             </div>
-            <!-- Add more months here -->
+            <div class="month-block" id="month5">
+                <div class="month-title">May</div>
+            </div>
+            <div class="month-block" id="month6">
+                <div class="month-title">June</div>
+            </div>
+            <div class="month-block" id="month7">
+                <div class="month-title">July</div>
+            </div>
+            <div class="month-block" id="month8">
+                <div class="month-title">August</div>
+            </div>
+            <div class="month-block" id="month9">
+                <div class="month-title">September</div>
+            </div>
+            <div class="month-block" id="month10">
+                <div class="month-title">October</div>
+            </div>
+            <div class="month-block" id="month11">
+                <div class="month-title">November</div>
+            </div>
+            <div class="month-block" id="month12">
+                <div class="month-title">December</div>
+            </div>
         </div>
-
-        <div id="bookInfo" class="book-info"></div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Book Info Section -->
+    <div class="book-info">
+        <h2>How It Works</h2>
+        <p>This advent calendar is all about books. Each day, you'll find a new book waiting for you to read. Click on any month to reveal the book suggestion for that month!</p>
+    </div>
+
 </body>
 </html>
