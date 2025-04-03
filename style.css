@@ -30,6 +30,7 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border: 2px solid #ddd; /* Add a border around the box */
 }
 
 .month-box:hover {
@@ -37,10 +38,25 @@ h1 {
 }
 
 .book-info {
-    display: none;
+    display: none; /* Hide by default */
     margin-top: 10px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     color: #fff; /* Ensures the text is visible on the colored background */
+}
+
+.book-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.book-description {
+    font-size: 1.1em;
+}
+
+/* To neatly place the months in a block */
+h3 {
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
 }
