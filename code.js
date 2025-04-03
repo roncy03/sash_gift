@@ -1,8 +1,14 @@
 function showBook(bookId) {
     const bookInfo = {
-        book1: { title: 'Book 1', description: 'Description for Book 1.' },
-        book2: { title: 'Book 2', description: 'Description for Book 2.' },
-        // Continue for all books
+        book1: { 
+            title: 'Book 1: "The Great Gatsby"',
+            description: 'A novel by F. Scott Fitzgerald about the American dream and societal change.'
+        },
+        book2: { 
+            title: 'Book 2: "To Kill a Mockingbird"',
+            description: 'A novel by Harper Lee, exploring racial injustice in the Deep South.'
+        },
+        // Add more books here
     };
 
     const book = bookInfo[bookId];
