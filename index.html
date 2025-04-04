@@ -9,21 +9,28 @@
 </head>
 <body>
 
-<h1 class="main-title">Bookish Advent Calendar</h1>
-<p class="intro">Every day is a new chapter... literally! Click the dates to discover a book you’ll love!</p>
+    <h1 class="main-title">📚 Bookish Advent Calendar 📚</h1>
+    <p class="intro">Every month unlocks a surprise book! Click on a month to reveal your book gift.</p>
 
-<div class="calendar">
-    <div class="month-box" onclick="revealBook(1)">
-        <h3>December 1</h3>
-        <div id="book-1" class="book-info" style="background-color: #ffcc00;">
-            <p class="book-title">Book Title 1</p>
-            <p class="book-description">A fun, quirky read that you’ll finish in one sitting.</p>
+    <div class="calendar">
+        <div class="month-box" onclick="revealBook(1)">
+            <h3>January</h3>
+            <div id="book-1" class="book-info">
+                <p class="book-title">The Midnight Library</p>
+                <p class="book-description">A tale of infinite possibilities.</p>
+            </div>
         </div>
+        <div class="month-box" onclick="revealBook(2)">
+            <h3>February</h3>
+            <div id="book-2" class="book-info">
+                <p class="book-title">Pride & Prejudice</p>
+                <p class="book-description">A classic romance with wit.</p>
+            </div>
+        </div>
+        <!-- Repeat for other months -->
     </div>
-    <!-- Repeat for all other months, changing the background color as needed -->
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
