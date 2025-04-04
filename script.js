@@ -1,8 +1,8 @@
-function revealBook(day) {
-    const book = document.getElementById('book-' + day);
-    if (book.style.display === "none" || book.style.display === "") {
-        book.style.display = "block"; // Reveal the book details
+function revealBook(month) {
+    var bookDiv = document.getElementById("book-" + month);
+    if (bookDiv.style.display === "none" || bookDiv.style.display === "") {
+        bookDiv.style.display = "block";
     } else {
-        book.style.display = "none"; // Hide the book details
+        bookDiv.style.display = "none";
     }
 }
