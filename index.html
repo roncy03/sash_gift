@@ -1,131 +1,118 @@
-<div class="calendar">
-    <!-- May -->
-    <div class="month-box" onclick="revealBook(1)">
-        <h3>May</h3>
-        <p class="book-description">Radical Choice</p>
-        <div id="book-1" class="book-info">
-            <p class="book-title">The Vegetarian</p>
-            <p class="book-description">A powerful story of a woman’s radical choice to stop eating meat. This decision causes a series of personal and familial upheavals, revealing deeper psychological struggles.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookish Advent Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&family=Playfair+Display&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- ✅ CSS linked here -->
+</head>
+<body>
+
+    <h1 class="main-title">📚 Bookish Advent Calendar 📚</h1>
+    <p class="intro">Every month unlocks a surprise book! Click on a month to reveal your book gift.</p>
+
+    <div class="calendar">
+        <!-- Starts from May -->
+        <div class="month-box" onclick="revealBook(1)">
+            <h3>May</h3>
+            <p class="book-description">Radical Choice</p>
+            <div id="book-1" class="book-info">
+                <p class="book-title">The Vegetarian</p>
+                <p class="book-description">A powerful story of a woman’s radical choice to stop eating meat...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(2)">
+            <h3>June</h3>
+            <p class="book-description">Friendship & Growth</p>
+            <div id="book-2" class="book-info">
+                <p class="book-title">The Co-op</p>
+                <p class="book-description">A heartwarming story about a group of friends in a co-op community...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(3)">
+            <h3>July</h3>
+            <p class="book-description">Investing Wisdom</p>
+            <div id="book-3" class="book-info">
+                <p class="book-title">The Intelligent Investor</p>
+                <p class="book-description">A classic on value investing and long-term growth strategies...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(4)">
+            <h3>August</h3>
+            <p class="book-description">Illusionary Rivalry</p>
+            <div id="book-4" class="book-info">
+                <p class="book-title">The Night Circus</p>
+                <p class="book-description">A magical rivalry between two young illusionists...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(5)">
+            <h3>September</h3>
+            <p class="book-description">Surreal Worlds</p>
+            <div id="book-5" class="book-info">
+                <p class="book-title">1Q84</p>
+                <p class="book-description">A tale of parallel worlds and existential mysteries...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(6)">
+            <h3>October</h3>
+            <p class="book-description">Alternate Lives</p>
+            <div id="book-6" class="book-info">
+                <p class="book-title">The Midnight Library</p>
+                <p class="book-description">A woman explores alternate versions of her life...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(7)">
+            <h3>November</h3>
+            <p class="book-description">Hollywood Secrets</p>
+            <div id="book-7" class="book-info">
+                <p class="book-title">The Seven Husbands of Evelyn Hugo</p>
+                <p class="book-description">A glamorous story of fame, scandal, and self-discovery...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(8)">
+            <h3>December</h3>
+            <p class="book-description">Eternal Forgetting</p>
+            <div id="book-8" class="book-info">
+                <p class="book-title">The Invisible Life of Addie LaRue</p>
+                <p class="book-description">A woman who lives forever but is forgotten by all...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(9)">
+            <h3>January</h3>
+            <p class="book-description">Infinite Possibilities</p>
+            <div id="book-9" class="book-info">
+                <p class="book-title">The Midnight Library</p>
+                <p class="book-description">A tale of infinite possibilities through alternate lives...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(10)">
+            <h3>February</h3>
+            <p class="book-description">Timeless Romance</p>
+            <div id="book-10" class="book-info">
+                <p class="book-title">Pride & Prejudice</p>
+                <p class="book-description">A classic romance of wit and societal norms...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(11)">
+            <h3>March</h3>
+            <p class="book-description">Self-Discovery Journey</p>
+            <div id="book-11" class="book-info">
+                <p class="book-title">The Theory of (Not Quite) Everything</p>
+                <p class="book-description">A whimsical journey of life, love, and self-realization...</p>
+            </div>
+        </div>
+        <div class="month-box" onclick="revealBook(12)">
+            <h3>April</h3>
+            <p class="book-description">Magical Bookshop</p>
+            <div id="book-12" class="book-info">
+                <p class="book-title">The Lost Bookshop</p>
+                <p class="book-description">A mystical bookshop full of secrets and stories...</p>
+            </div>
         </div>
     </div>
 
-    <!-- June -->
-    <div class="month-box" onclick="revealBook(2)">
-        <h3>June</h3>
-        <p class="book-description">Friendship & Growth</p>
-        <div id="book-2" class="book-info">
-            <p class="book-title">The Co-op</p>
-            <p class="book-description">A heartwarming story about a group of friends who find their lives intertwined through the challenges and joys of living in a co-op community. They navigate personal growth and shared experiences.</p>
-        </div>
-    </div>
+    <script src="script.js"></script> <!-- ✅ JavaScript linked here -->
 
-    <!-- July -->
-    <div class="month-box" onclick="revealBook(3)">
-        <h3>July</h3>
-        <p class="book-description">Investing Wisdom</p>
-        <div id="book-3" class="book-info">
-            <p class="book-title">The Intelligent Investor</p>
-            <p class="book-description">A classic on investing that provides timeless wisdom on value investing, emphasizing patience and long-term growth. This book offers principles that have shaped successful investment strategies for generations.</p>
-        </div>
-    </div>
-
-    <!-- August -->
-    <div class="month-box" onclick="revealBook(4)">
-        <h3>August</h3>
-        <p class="book-description">Illusionary Rivalry</p>
-        <div id="book-4" class="book-info">
-            <p class="book-title">The Night Circus</p>
-            <p class="book-description">A magical rivalry between two young illusionists, set within a mysterious and enchanting circus that only opens at night. The circus becomes a battleground for their abilities, with profound consequences.</p>
-        </div>
-    </div>
-
-    <!-- September -->
-    <div class="month-box" onclick="revealBook(5)">
-        <h3>September</h3>
-        <p class="book-description">Surreal Worlds</p>
-        <div id="book-5" class="book-info">
-            <p class="book-title">1Q84</p>
-            <p class="book-description">A complex tale of two individuals living in parallel worlds. The narrative blurs the lines between reality and fiction, exploring themes of love, power, and existential questions.</p>
-        </div>
-    </div>
-
-    <!-- October -->
-    <div class="month-box" onclick="revealBook(6)">
-        <h3>October</h3>
-        <p class="book-description">Alternate Lives</p>
-        <div id="book-6" class="book-info">
-            <p class="book-title">The Midnight Library</p>
-            <p class="book-description">A woman explores alternate versions of her life and faces the choices she made in this thought-provoking story about regrets and second chances. She discovers the infinite possibilities of her own existence.</p>
-        </div>
-    </div>
-
-    <!-- November -->
-    <div class="month-box" onclick="revealBook(7)">
-        <h3>November</h3>
-        <p class="book-description">Hollywood Secrets</p>
-        <div id="book-7" class="book-info">
-            <p class="book-title">The Seven Husbands of Evelyn Hugo</p>
-            <p class="book-description">A glamorous story about the life of a Hollywood icon, uncovering love, scandal, and secrets behind her seven marriages. The tale reveals her journey through fame, loss, and self-discovery.</p>
-        </div>
-    </div>
-
-    <!-- December -->
-    <div class="month-box" onclick="revealBook(8)">
-        <h3>December</h3>
-        <p class="book-description">Eternal Forgetting</p>
-        <div id="book-8" class="book-info">
-            <p class="book-title">The Invisible Life of Addie LaRue</p>
-            <p class="book-description">A beautiful tale about a woman who makes a pact to live forever, only to be forgotten by everyone she meets. Her life unfolds in a poignant exploration of identity and the passage of time.</p>
-        </div>
-    </div>
-
-    <!-- January -->
-    <div class="month-box" onclick="revealBook(9)">
-        <h3>January</h3>
-        <p class="book-description">Infinite Possibilities</p>
-        <div id="book-9" class="book-info">
-            <p class="book-title">The Midnight Library</p>
-            <p class="book-description">A tale of infinite possibilities as a woman explores different choices she's made in her life. Each path leads her to another life, showing her what could have been.</p>
-        </div>
-    </div>
-
-    <!-- February -->
-    <div class="month-box" onclick="revealBook(10)">
-        <h3>February</h3>
-        <p class="book-description">Timeless Romance</p>
-        <div id="book-10" class="book-info">
-            <p class="book-title">Pride & Prejudice</p>
-            <p class="book-description">A classic romance filled with wit and social commentary. The story follows Elizabeth Bennet as she navigates love, societal expectations, and misunderstandings with Mr. Darcy.</p>
-        </div>
-    </div>
-
-    <!-- March -->
-    <div class="month-box" onclick="revealBook(11)">
-        <h3>March</h3>
-        <p class="book-description">Self-Discovery Journey</p>
-        <div id="book-11" class="book-info">
-            <p class="book-title">The Theory of (Not Quite) Everything</p>
-            <p class="book-description">A whimsical journey of self-discovery as a woman navigates life, love, and the messiness of being human. Her search for meaning leads to profound realizations about herself.</p>
-        </div>
-    </div>
-
-    <!-- April -->
-    <div class="month-box" onclick="revealBook(12)">
-        <h3>April</h3>
-        <p class="book-description">Magical Bookshop</p>
-        <div id="book-12" class="book-info">
-            <p class="book-title">The Lost Bookshop</p>
-            <p class="book-description">A mystical story about a bookshop that holds secrets and a quest for knowledge. The protagonist uncovers hidden stories and learns about herself in the process.</p>
-        </div>
-    </div>
-
-    <!-- May (next year) -->
-    <div class="month-box" onclick="revealBook(13)">
-        <h3>May</h3>
-        <p class="book-description">Surprise Bonus Read</p>
-        <div id="book-13" class="book-info">
-            <p class="book-title">Your Custom Pick!</p>
-            <p class="book-description">This one is for you to choose — a book you've been meaning to read or something new that excites you. It's your mystery gift for finishing the journey!</p>
-        </div>
-    </div>
-</div>
+</body>
+</html>
