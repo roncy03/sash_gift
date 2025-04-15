@@ -1,118 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookish Advent Calendar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&family=Playfair+Display&family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- ✅ CSS linked here -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Advent Calendar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <h1 class="main-title">📚 Bookish Advent Calendar 📚</h1>
-    <p class="intro">Every month unlocks a surprise book! Click on a month to reveal your book gift.</p>
-
+  <div class="container">
+    <h1>📚 Book Advent Calendar</h1>
+    <p class="overview">
+      Every month, unwrap a surprise book picked just for you! Click on each month to reveal a title that’ll keep you turning pages and stealing hearts.
+    </p>
     <div class="calendar">
-        <!-- Starts from May -->
-        <div class="month-box" onclick="revealBook(1)">
-            <h3>May</h3>
-            <p class="book-description">Radical Choice</p>
-            <div id="book-1" class="book-info">
-                <p class="book-title">The Vegetarian</p>
-                <p class="book-description">A powerful story of a woman’s radical choice to stop eating meat...</p>
-            </div>
+      
+      <!-- May (was December originally) -->
+      <div class="month-box" onclick="revealBook(1)">
+        <h3>May</h3>
+        <p class="book-description">Eternal Forgetting</p>
+        <div id="book-1" class="book-info">
+          <p class="book-title">The Invisible Life of Addie LaRue</p>
+          <p class="book-description">A woman who lives forever but is forgotten by all...</p>
         </div>
-        <div class="month-box" onclick="revealBook(2)">
-            <h3>June</h3>
-            <p class="book-description">Friendship & Growth</p>
-            <div id="book-2" class="book-info">
-                <p class="book-title">The Co-op</p>
-                <p class="book-description">A heartwarming story about a group of friends in a co-op community...</p>
-            </div>
+      </div>
+
+      <!-- June -->
+      <div class="month-box" onclick="revealBook(2)">
+        <h3>June</h3>
+        <p class="book-description">Whimsical Love</p>
+        <div id="book-2" class="book-info">
+          <p class="book-title">The Co-op</p>
+          <p class="book-description">Forced proximity, quirky characters, and a lovable romance...</p>
         </div>
-        <div class="month-box" onclick="revealBook(3)">
-            <h3>July</h3>
-            <p class="book-description">Investing Wisdom</p>
-            <div id="book-3" class="book-info">
-                <p class="book-title">The Intelligent Investor</p>
-                <p class="book-description">A classic on value investing and long-term growth strategies...</p>
-            </div>
+      </div>
+
+      <!-- July (was May originally) -->
+      <div class="month-box" onclick="revealBook(3)">
+        <h3>July</h3>
+        <p class="book-description">Radical Choice</p>
+        <div id="book-3" class="book-info">
+          <p class="book-title">The Vegetarian</p>
+          <p class="book-description">A powerful story of a woman’s radical choice to stop eating meat...</p>
         </div>
-        <div class="month-box" onclick="revealBook(4)">
-            <h3>August</h3>
-            <p class="book-description">Illusionary Rivalry</p>
-            <div id="book-4" class="book-info">
-                <p class="book-title">The Night Circus</p>
-                <p class="book-description">A magical rivalry between two young illusionists...</p>
-            </div>
+      </div>
+
+      <!-- August -->
+      <div class="month-box" onclick="revealBook(4)">
+        <h3>August</h3>
+        <p class="book-description">Memory Maze</p>
+        <div id="book-4" class="book-info">
+          <p class="book-title">The Guest Lecture</p>
+          <p class="book-description">A brilliant woman relives moments of her life while struggling with anxiety...</p>
         </div>
-        <div class="month-box" onclick="revealBook(5)">
-            <h3>September</h3>
-            <p class="book-description">Surreal Worlds</p>
-            <div id="book-5" class="book-info">
-                <p class="book-title">1Q84</p>
-                <p class="book-description">A tale of parallel worlds and existential mysteries...</p>
-            </div>
+      </div>
+
+      <!-- September -->
+      <div class="month-box" onclick="revealBook(5)">
+        <h3>September</h3>
+        <p class="book-description">Unraveled Reality</p>
+        <div id="book-5" class="book-info">
+          <p class="book-title">Kafka on the Shore</p>
+          <p class="book-description">A metaphysical mind-bender with cats, fish rain, and destiny...</p>
         </div>
-        <div class="month-box" onclick="revealBook(6)">
-            <h3>October</h3>
-            <p class="book-description">Alternate Lives</p>
-            <div id="book-6" class="book-info">
-                <p class="book-title">The Midnight Library</p>
-                <p class="book-description">A woman explores alternate versions of her life...</p>
-            </div>
+      </div>
+
+      <!-- October -->
+      <div class="month-box" onclick="revealBook(6)">
+        <h3>October</h3>
+        <p class="book-description">Witty Chaos</p>
+        <div id="book-6" class="book-info">
+          <p class="book-title">The Theory of (Not Quite) Everything</p>
+          <p class="book-description">Two siblings and one equation of love, logic, and unexpected humor...</p>
         </div>
-        <div class="month-box" onclick="revealBook(7)">
-            <h3>November</h3>
-            <p class="book-description">Hollywood Secrets</p>
-            <div id="book-7" class="book-info">
-                <p class="book-title">The Seven Husbands of Evelyn Hugo</p>
-                <p class="book-description">A glamorous story of fame, scandal, and self-discovery...</p>
-            </div>
+      </div>
+
+      <!-- November -->
+      <div class="month-box" onclick="revealBook(7)">
+        <h3>November</h3>
+        <p class="book-description">Hidden Stories</p>
+        <div id="book-7" class="book-info">
+          <p class="book-title">The Lost Bookshop</p>
+          <p class="book-description">A magical tale of rare books and even rarer courage...</p>
         </div>
-        <div class="month-box" onclick="revealBook(8)">
-            <h3>December</h3>
-            <p class="book-description">Eternal Forgetting</p>
-            <div id="book-8" class="book-info">
-                <p class="book-title">The Invisible Life of Addie LaRue</p>
-                <p class="book-description">A woman who lives forever but is forgotten by all...</p>
-            </div>
+      </div>
+
+      <!-- December (was July originally) -->
+      <div class="month-box" onclick="revealBook(8)">
+        <h3>December</h3>
+        <p class="book-description">Investing Wisdom</p>
+        <div id="book-8" class="book-info">
+          <p class="book-title">The Intelligent Investor</p>
+          <p class="book-description">A classic on value investing and long-term growth strategies...</p>
         </div>
-        <div class="month-box" onclick="revealBook(9)">
-            <h3>January</h3>
-            <p class="book-description">Infinite Possibilities</p>
-            <div id="book-9" class="book-info">
-                <p class="book-title">The Midnight Library</p>
-                <p class="book-description">A tale of infinite possibilities through alternate lives...</p>
-            </div>
+      </div>
+
+      <!-- January -->
+      <div class="month-box" onclick="revealBook(9)">
+        <h3>January</h3>
+        <p class="book-description">Ancient Echoes</p>
+        <div id="book-9" class="book-info">
+          <p class="book-title">The Palace of Illusions</p>
+          <p class="book-description">The Mahabharata from Draupadi’s fierce, feminist voice...</p>
         </div>
-        <div class="month-box" onclick="revealBook(10)">
-            <h3>February</h3>
-            <p class="book-description">Timeless Romance</p>
-            <div id="book-10" class="book-info">
-                <p class="book-title">Pride & Prejudice</p>
-                <p class="book-description">A classic romance of wit and societal norms...</p>
-            </div>
+      </div>
+
+      <!-- February -->
+      <div class="month-box" onclick="revealBook(10)">
+        <h3>February</h3>
+        <p class="book-description">Obsession Unveiled</p>
+        <div id="book-10" class="book-info">
+          <p class="book-title">The Maddest Obsession</p>
+          <p class="book-description">A dark mafia romance with twisted love and even twistier pasts...</p>
         </div>
-        <div class="month-box" onclick="revealBook(11)">
-            <h3>March</h3>
-            <p class="book-description">Self-Discovery Journey</p>
-            <div id="book-11" class="book-info">
-                <p class="book-title">The Theory of (Not Quite) Everything</p>
-                <p class="book-description">A whimsical journey of life, love, and self-realization...</p>
-            </div>
+      </div>
+
+      <!-- March -->
+      <div class="month-box" onclick="revealBook(11)">
+        <h3>March</h3>
+        <p class="book-description">Bookish Heist</p>
+        <div id="book-11" class="book-info">
+          <p class="book-title">The Book Thief</p>
+          <p class="book-description">A story of a girl, her stolen books, and survival in Nazi Germany...</p>
         </div>
-        <div class="month-box" onclick="revealBook(12)">
-            <h3>April</h3>
-            <p class="book-description">Magical Bookshop</p>
-            <div id="book-12" class="book-info">
-                <p class="book-title">The Lost Bookshop</p>
-                <p class="book-description">A mystical bookshop full of secrets and stories...</p>
-            </div>
+      </div>
+
+      <!-- April -->
+      <div class="month-box" onclick="revealBook(12)">
+        <h3>April</h3>
+        <p class="book-description">Soulful Solitude</p>
+        <div id="book-12" class="book-info">
+          <p class="book-title">Norwegian Wood</p>
+          <p class="book-description">A haunting tale of young love and deep loss set in 1960s Tokyo...</p>
         </div>
+      </div>
+
     </div>
-
-    <script src="script.js"></script> <!-- ✅ JavaScript linked here -->
-
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
